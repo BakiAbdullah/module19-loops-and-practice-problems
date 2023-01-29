@@ -118,22 +118,30 @@ var pens = penColor.length;
 
 
 //~ 03. --------------------------------
-// Display numbers between 58 to 98.
-
-
-
+//~ Display numbers between 58 to 98.
+// for (var i = 58; i <= 98; i++) {
+//   console.log(i);
+// }
 
 
 //~ 04. --------------------------------
-// Show all even numbers from 412 to 456
-
+//~ Show all even numbers from 412 to 456
+// for (var i = 411; i <= 456; i++) {
+//   if (i % 2 == 0) { //? Vag sesh jodi 0 hoy , tobei seta Even number hbe.
+//     console.log(i);
+//   }
+// } 
 
 //~ 05. --------------------------------
-// Show all odd numbers between 518 to 623
-
+//~ Show all odd numbers between 518 to 623
+for ( var i = 518; i <= 623; i++) {
+  if (i % 2 == 1) { //! i ke 2diye vag kore vagsesh 1 hcche tai i Odd number show krtese.
+    console.log(i);
+  }
+}
 
 //~ 06. --------------------------------
-// Run a loop from 30 to 86. This loop will stop if the value get higher than 44.
+//~ Run a loop from 30 to 86. This loop will stop if the value get higher than 44.
 
 // for (var i = 30; i <= 86; i++){
 //   if ( i > 44) {
@@ -144,20 +152,20 @@ var pens = penColor.length;
 
 
 //~ 07. --------------------------------
-// Write the price of the books that you have. Display the prices if the prices is lower than 200 only.
+//~ Write the price of the books that you have. Display the prices if the prices is lower than 200 only.
 var priceOfMyBooks = [100, 150, 180, 200, 220, 260, 300, 450, 490];
 
-for (var i = 0; i < priceOfMyBooks.length; i++) {
-  var books = priceOfMyBooks[i];
-  if (books > 200) {
-    continue; //? break; use krle Emediate break krbe.
-  }
-  console.log(books);
-}
+// for (var i = 0; i < priceOfMyBooks.length; i++) {
+//   var books = priceOfMyBooks[i];
+//   if (books > 200) {
+//     continue; //? break; use krle Emediate break krbe.
+//   }
+//   console.log(books);
+// }
 
 
 //~ 08. --------------------------------
-// Create an array for all the mobile phone you have used. Display all elements of the array by using a while loop.
+//~ Create an array for all the mobile phone you have used. Display all elements of the array by using a while loop.
 var myMobilePhones = ['samphony', 'nokia', 'lg', 'xiaomi', 'oneplus', 'samsung', 'apple'];
 
 // var i = 0;
@@ -173,8 +181,20 @@ var myMobilePhones = ['samphony', 'nokia', 'lg', 'xiaomi', 'oneplus', 'samsung',
 
 
 //~ 09. --------------------------------
-// How does while & for loop works? Difference between while and for loop.
-
+//~ How does while & for loop works? 
+/*  
+The while loop checks the condition first, and if it returns true, the code within it runs.
+The loop continues until the condition provided returns false, then stops. Alternatively,
+the do while loop runs its code once before checking the condition and runs again only if the condition is true.
+*/
+//? A "For" Loop is used to repeat a specific block of code a known number of times. For example, if we want to check the grade of every student in the class, we loop from 1 to that number. When the number of times is not known before hand, we use a "While" loop
 
 
 //~ 10. --------------------------------
+//~ Difference between while and for loop.
+
+// The for and while loops are both conditional statements. A for loop is a single-line command that will be executed repeatedly. While loops can be single-lined or contain multiple commands for a single condition.
+
+// Both the for loop and the while loop are important in computer languages for obtaining results. The condition is met if the command syntax is correct.
+
+// Both the for loop and the while loop are iteration statements, but they have distinct characteristics. The for loop declares everything (initialization, condition, iteration) at the top of the loop body. In contrast, only initialization and condition are at the top of the body of the loop in a while loop, and iteration can be written anywhere in the body of the loop.
